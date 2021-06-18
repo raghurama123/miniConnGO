@@ -22,7 +22,7 @@ Two input files are required and must be kept in the same location where the pro
     1. mol1_obabel.sdf     <-- an SDF file (for example generated with obabel)
     2. mol1_orca.out       <-- Output file from an Orca/Mopac run of geometry optimization
     
-Examples are given in the directory example
+Examples are given in the directories example_01 and example_02
 
 The names of these files form argument-1 and argument-2 
 
@@ -31,7 +31,7 @@ Argument-3 is the name of the code used for optimization. Accepted values are 'o
 Optionally, a fourth argument may be provided containing the file name to collect the geometry from the Orca output in the SDF format using connectivities
 from 'argument-1'
 
-# Sample execution - 1 (for Orca)
+# Sample execution - 1 (for Orca, see example_01)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_orca.out orca mol1_orca.sdf
@@ -70,7 +70,7 @@ from 'argument-1'
     == Outcome of the Connectivity preserving Geometry Optimization
     ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
     
-# Sample execution - 2 (for Mopac)
+# Sample execution - 2 (for Mopac, example_02)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_mopac.out mopac mol1_mopac.sdf
