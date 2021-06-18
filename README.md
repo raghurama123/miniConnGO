@@ -26,7 +26,7 @@ Examples are given in the directories example_01 and example_02
 
 The names of these files form argument-1 and argument-2 
 
-Argument-3 is the name of the code used for optimization. Accepted values are 'orca' or 'mopac'
+Argument-3 is the name of the program used for geometry optimization. Accepted values are 'orca' or 'mopac'
 
 Optionally, a fourth argument may be provided containing the file name to collect the geometry from the Orca output in the SDF format using connectivities
 from 'argument-1'
