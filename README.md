@@ -4,7 +4,9 @@
 [![Fortran90](https://img.shields.io/badge/Language-Fortran90-red.svg)](https://en.wikipedia.org/wiki/Fortran)
 
 
-This program compares an SDF file and an output file of an Orca or Mopac geometry optimization run and reports if the atomic connectivity is preserved during geometry optimization. A more elaborate package to perform Connectivity preserving Geometry Optimization is here: [ConnGO](https://github.com/raghurama123/ConnGO)
+This program compares an SDF file and an output file of an Orca or Mopac geometry optimization run and reports if the atomic connectivity is preserved during geometry optimization. 
+
+A more elaborate package to perform Connectivity preserving Geometry Optimization is here: [ConnGO](https://github.com/raghurama123/ConnGO)
 
 # How to compile?
 
