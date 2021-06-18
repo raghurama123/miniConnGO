@@ -2,14 +2,14 @@ program conngo
 
   implicit none
 
-  integer                         :: i
+  integer                         :: i, tmpi
   integer                         :: Nat, Nconn, igeo, nlong1, nlong2
   integer                         :: iat, iconn
   integer, allocatable            :: conn(:,:)
 
   character(len=500)              :: arg, cmd
   character(len=500)              :: title1, title2, title, title3, gaussinp
-  character(len=500)              :: file1, file2, file3
+  character(len=500)              :: file1, file2, file3, code
 
   character(len=2), allocatable   :: sy(:)
   character(len=200), allocatable :: tit1(:), tit2(:)
@@ -27,17 +27,13 @@ program conngo
   call getarg(2, arg)
   file2=trim(arg)
 
-  if ( iargc() .eq. 3 ) then
-    call getarg(3, arg)
+  call getarg(3, arg)
+  code=trim(arg)
+
+  if ( iargc() .eq. 4 ) then
+    call getarg(4, arg)
     file3=trim(arg)
   endif
-
-  write(cmd,'(3a)')"grep 'Number of atoms' ", trim(file2), " | tail -1 | awk '{print $5}' > scr"
-  call system(trim(cmd))
-
-  open(unit=10, file='scr')
-  read(10,*) Nat
-  close(10)
 
   !=== Read SDF
   open(unit=101, file=trim(file1))
@@ -67,22 +63,44 @@ program conngo
   !=== prepare second file, xyz
   open(unit=10, file='geom.xyz')
   write(10,*) Nat
-  write(10,*) title1
+  write(10,*) trim(title1)
   close(10)
-  write(cmd,'(a,i3.3,a,i3.3,a)') "grep -A", Nat+1, " 'CARTESIAN COORDINATES (ANGSTROEM)' mol1_orca.out | tail -", &
-  Nat, " >> geom.xyz"
-  call system(trim(cmd))
 
-  file2='geom.xyz'
+  select case(code)
+    case('Orca','orca','ORCA')
+      write(cmd,'(a,i3.3,a,a,a,i3.3,a)') "grep -A", Nat+1, " 'CARTESIAN COORDINATES (ANGSTROEM)' ", trim(file2)," | tail -", &
+      Nat, " >> geom.xyz"
+      write(*,'(a)') trim(cmd)
+      call system(trim(cmd))
+      file2='geom.xyz'
+      !=== read second file, xyz
+      open(unit=101, file=trim(file2))
+      read(101,*)Nat
+      read(101,*)title
+      do iat = 1, Nat
+        read(101,*) sy(iat), R2(iat,1:3)
+      enddo
+      close(101)
+    case('Mopac','mopac','MOPAC')
+      write(cmd,'(a,i3.3,a,a,a,i3.3,a)') "grep -A", Nat+1, " 'CARTESIAN COORDINATES' ", trim(file2), " | tail -", Nat, &
+      " >> geom.xyz"
+      write(*,'(a)') trim(cmd)
+      call system(trim(cmd))
+      file2='geom.xyz'
+      !=== read second file, xyz
+      open(unit=101, file=trim(file2))
+      read(101,*)Nat
+      read(101,*)title
+      do iat = 1, Nat
+        read(101,*) tmpi, sy(iat), R2(iat,1:3)
+      enddo
+      close(101)
+    case default
+      write(*,'(a)') " ERROR: Unknown name for the code"
+  end select
 
-  !=== read second file, xyz
-  open(unit=101, file=trim(file2))
-  read(101,*)Nat
-  read(101,*)title
-  do iat = 1, Nat
-    read(101,*) sy(iat), R2(iat,1:3)
-  enddo
-  close(101)
+
+
   do iconn = 1, Nconn
     RR1 = R2( conn(iconn,1), 1:3 )
     RR2 = R2( conn(iconn,2), 1:3 )
@@ -93,7 +111,7 @@ program conngo
   enddo
 
   !=== third file, make new sdf
-  if ( iargc() .eq. 3 ) then
+  if ( iargc() .eq. 4 ) then
     open(unit=101, file=trim(file3))
     write(101,'(a)')trim(title1)
     write(101,'(x,a)')trim(title2)
