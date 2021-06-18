@@ -14,7 +14,7 @@ Contains a fortran code to compare an SDF file and an output file of an Orca geo
 # How to run? 
 
 
-> ./miniConnGO.x    mol1_obabel.sdf    mol1_orca.out    mol1_orca.sdf
+> ./miniConnGO.x    mol1_obabel.sdf    mol1_orca.out    mol1_orca.sdf      
 >                   ( argument-1 )     ( argument-2 )   ( argument-3, optional ) 
 
                    
