@@ -31,7 +31,7 @@ Argument-3 is the name of the code used for optimization. Accepted values are 'o
 Optionally, a fourth argument may be provided containing the file name to collect the geometry from the Orca output in the SDF format using connectivities
 from 'argument-1'
 
-# Sample execution - 1 (Obabel-UFF vs. Orca, see example_01)
+# Sample execution - 1 (Obabel-UFF vs. Orca, see the directory example_01)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_orca.out orca mol1_orca.sdf
@@ -70,7 +70,7 @@ from 'argument-1'
     == Outcome of the Connectivity preserving Geometry Optimization
     ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
     
-# Sample execution - 2 (Obabel-UFF vs. Mopac, example_02)
+# Sample execution - 2 (Obabel-UFF vs. Mopac, see the directory example_02)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_mopac.out mopac mol1_mopac.sdf
@@ -109,7 +109,7 @@ from 'argument-1'
     == Outcome of the Connectivity preserving Geometry Optimization
     ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
 
-# Sample execution - 3 (MOPAC vs. Orca using mol1_mopac.sdf from previous example)
+# Sample execution - 3 (MOPAC vs. Orca, using mol1_mopac.sdf from previous example)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_mopac.sdf mol1_orca.out orca mol1_orca.sdf
