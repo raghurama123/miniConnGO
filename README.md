@@ -33,7 +33,7 @@ from 'argument-1'
     raghurama$ ./conngo_test.x mol1_obabel.sdf mol1_orca.out mol1_orca.sdf
 
     == connectivities
-                     File-1                  File-2                Deviation
+                       File-1                  File-2                Deviation
     1  2  2  O = C     1.2201                  1.2153                  0.0048
     2  3  1  C - C     1.4729                  1.4656                  0.0073
     2  7  1  C - H     1.0858                  1.1188                 -0.0329
