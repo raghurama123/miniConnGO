@@ -29,8 +29,8 @@ from 'argument-1'
 
 # Sample execution
 
-    gfortran miniConnGO.f90 -o miniConnGO.x
-    ./conngo_test.x mol1_obabel.sdf mol1_orca.out mol1_orca.sdf
+    raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
+    raghurama$ ./conngo_test.x mol1_obabel.sdf mol1_orca.out mol1_orca.sdf
 
     # connectivities
     1  2  2  O =C     1.2201  l       1.2153  l       0.0048
