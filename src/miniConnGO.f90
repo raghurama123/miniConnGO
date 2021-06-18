@@ -70,7 +70,7 @@ program conngo
     case('Orca','orca','ORCA')
       write(cmd,'(a,i3.3,a,a,a,i3.3,a)') "grep -A", Nat+1, " 'CARTESIAN COORDINATES (ANGSTROEM)' ", trim(file2)," | tail -", &
       Nat, " >> geom.xyz"
-      write(*,'(a)') trim(cmd)
+      !write(*,'(a)') trim(cmd)
       call system(trim(cmd))
       file2='geom.xyz'
       !=== read second file, xyz
@@ -84,7 +84,7 @@ program conngo
     case('Mopac','mopac','MOPAC')
       write(cmd,'(a,i3.3,a,a,a,i3.3,a)') "grep -A", Nat+1, " 'CARTESIAN COORDINATES' ", trim(file2), " | tail -", Nat, &
       " >> geom.xyz"
-      write(*,'(a)') trim(cmd)
+      !write(*,'(a)') trim(cmd)
       call system(trim(cmd))
       file2='geom.xyz'
       !=== read second file, xyz
