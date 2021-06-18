@@ -1,0 +1,267 @@
+ *******************************************************************************
+ ** Site#: 31249        For non-commercial use only    Version 21.051L 64BITS **
+ *******************************************************************************
+ ** Cite this program as: MOPAC2016, Version: 21.051L, James J. P. Stewart,   **
+ ** Stewart Computational Chemistry, web: HTTP://OpenMOPAC.net. Days left: 247**
+ *******************************************************************************
+ **                                                                           **
+ **                                MOPAC2016                                  **
+ **                                                                           **
+ *******************************************************************************
+
+                              PM7 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Fri Jun 18 20:28:28 2021  *
+ *  PM7        - The PM7 Hamiltonian to be used
+ *  NOMM       - DO NOT MAKE MM CORRECTION TO CONH BARRIER
+ *
+ *
+ *
+ *                 CHARGE ON SYSTEM = 0
+ *
+ *
+ *
+ *  PRECISE    - TIGHTER CRITERIA TO BE USED
+ *  T=         - A TIME OF 172800.0 SECONDS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 7200.0 SECONDS REQUESTED
+ *  CYCLES=    - DO A MAXIMUM OF 99999 STEPS
+ *******************************************************************************
+PM7 NOMM CHARGE=0 CYCLES=99999 PRECISE
+ Bonds
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       O          1.00576200  *   0.03487600  *  -0.09801800  *
+     2       C          2.21829300  *   0.09193200  *  -0.03952200  *
+     3       C          2.96102600  *   1.05236100  *   0.78131900  *
+     4       C          4.31374900  *   1.07354000  *   0.80239800  *
+     5       C          5.10696400  *   1.99680300  *   1.59315300  *
+     6       C          6.45168200  *   2.01363000  *   1.59842100  *
+     7       H          2.85358900  *  -0.61458100  *  -0.63018300  *
+     8       H          2.36820000  *   1.75407200  *   1.37490800  *
+     9       H          4.85710600  *   0.34726300  *   0.18560000  *
+    10       H          4.55215700  *   2.71235300  *   2.20683700  *
+    11       H          7.03149100  *   1.31270600  *   0.99226200  *
+    12       H          7.01098100  *   2.72694400  *   2.20332400  *
+ 
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         O          1.0058      0.0349     -0.0980
+     2         C          2.2183      0.0919     -0.0395
+     3         C          2.9610      1.0524      0.7813
+     4         C          4.3137      1.0735      0.8024
+     5         C          5.1070      1.9968      1.5932
+     6         C          6.4517      2.0136      1.5984
+     7         H          2.8536     -0.6146     -0.6302
+     8         H          2.3682      1.7541      1.3749
+     9         H          4.8571      0.3473      0.1856
+    10         H          4.5522      2.7124      2.2068
+    11         H          7.0315      1.3127      0.9923
+    12         H          7.0110      2.7269      2.2033
+
+ General Reference for PM7:
+ "Optimization of Parameters for Semiempirical Methods VI: More Modifications to the 
+ NDDO Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. Mod., 1:32, 19 (2013)
+ https://link.springer.com/article/10.1007/s00894-012-1667-x
+
+           Empirical Formula: C5 H6 O  =    12 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 16
+
+
+          Geometry optimization using EF
+
+          DIAGONAL MATRIX USED AS START HESSIAN
+
+ CYCLE:     1 TIME:   0.023 TIME LEFT:  2.00D  GRAD.:    44.883 HEAT:-0.8152572
+ CYCLE:     2 TIME:   0.016 TIME LEFT:  2.00D  GRAD.:    28.774 HEAT: -1.288852
+ CYCLE:     3 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:    17.462 HEAT: -1.609473
+ CYCLE:     4 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    24.273 HEAT: -1.667166
+ CYCLE:     5 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:    10.158 HEAT: -1.854738
+ CYCLE:     6 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     9.542 HEAT: -1.886208
+ CYCLE:     7 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     8.319 HEAT: -1.904168
+ CYCLE:     8 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     7.316 HEAT: -1.924971
+ CYCLE:     9 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     9.590 HEAT: -1.932434
+ CYCLE:    10 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     4.451 HEAT: -1.961071
+ CYCLE:    11 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     6.450 HEAT: -1.965214
+ CYCLE:    12 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     4.491 HEAT: -1.979352
+ CYCLE:    13 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     4.169 HEAT: -1.985883
+ CYCLE:    14 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     3.223 HEAT: -1.992433
+ CYCLE:    15 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     2.406 HEAT: -1.998992
+ CYCLE:    16 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     2.251 HEAT: -2.004120
+ CYCLE:    17 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     3.675 HEAT: -2.007555
+ CYCLE:    18 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     1.098 HEAT: -2.012044
+ CYCLE:    19 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.903 HEAT: -2.013274
+ CYCLE:    20 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.132 HEAT: -2.016127
+ CYCLE:    21 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     1.336 HEAT: -2.019294
+ CYCLE:    22 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     1.163 HEAT: -2.023020
+ CYCLE:    23 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.645 HEAT: -2.025260
+ CYCLE:    24 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.498 HEAT: -2.025756
+ CYCLE:    25 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.404 HEAT: -2.026323
+ CYCLE:    26 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.336 HEAT: -2.026629
+ CYCLE:    27 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.218 HEAT: -2.026911
+ CYCLE:    28 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.185 HEAT: -2.026994
+ CYCLE:    29 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.157 HEAT: -2.027046
+ CYCLE:    30 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.114 HEAT: -2.027092
+ CYCLE:    31 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.077 HEAT: -2.027117
+ CYCLE:    32 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.058 HEAT: -2.027126
+ CYCLE:    33 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.041 HEAT: -2.027133
+
+     GRADIENT =  0.04077 IS LESS THAN CUTOFF =  0.05000
+
+
+
+ -------------------------------------------------------------------------------
+ PM7 NOMM CHARGE=0 CYCLES=99999 PRECISE
+ Bonds
+
+
+
+     GEOMETRY OPTIMISED USING EIGENVECTOR FOLLOWING (EF).     
+     SCF FIELD WAS ACHIEVED                                   
+
+
+                              PM7 CALCULATION
+                                                       MOPAC2016 (Version: 21.051L)
+                                                       Fri Jun 18 20:28:28 2021
+                                                       No. of days remaining = 247
+
+
+
+
+          FINAL HEAT OF FORMATION =         -2.02713 KCAL/MOL =      -8.48152 KJ/MOL
+
+
+          TOTAL ENERGY            =       -989.05295 EV
+          ELECTRONIC ENERGY       =      -3428.40827 EV  POINT GROUP:     Cs  
+          CORE-CORE REPULSION     =       2439.35532 EV
+          COSMO AREA              =        133.06 SQUARE ANGSTROMS
+          COSMO VOLUME            =        116.08 CUBIC ANGSTROMS
+
+          GRADIENT NORM           =          0.04077 = 0.01177 PER ATOM
+          IONIZATION POTENTIAL    =         10.074225 EV
+          HOMO LUMO ENERGIES (EV) =        -10.074 -0.924
+          NO. OF FILLED LEVELS    =         16
+          MOLECULAR WEIGHT        =         82.1018
+
+          MOLECULAR DIMENSIONS (Angstroms)
+
+            Atom       Atom       Distance
+            H    12    O     1     6.92004
+            H    10    H     7     2.94217
+            H     8    H    11     0.01859
+
+
+          SCF CALCULATIONS        =         37
+ 
+          WALL-CLOCK TIME         =          0.180 SECONDS
+          COMPUTATION TIME        =          2.550 SECONDS
+
+
+
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       O          1.01647739  *   0.06952518  *  -0.05266502  *
+     2       C          2.22502164  *   0.08107919  *  -0.05256895  *
+     3       C          2.98606286  *   1.04303363  *   0.76728060  *
+     4       C          4.32639109  *   1.05677376  *   0.78328836  *
+     5       C          5.08874086  *   2.00153294  *   1.59114856  *
+     6       C          6.42515442  *   2.01494773  *   1.60634852  *
+     7       H          2.78653572  *  -0.63309608  *  -0.67012590  *
+     8       H          2.37877209  *   1.73363437  *   1.35334737  *
+     9       H          4.91329196  *   0.35272457  *   0.18556443  *
+    10       H          4.50590733  *   2.70551364  *   2.19027516  *
+    11       H          7.04329568  *   1.34063343  *   1.03243299  *
+    12       H          7.00421326  *   2.70796216  *   2.19957970  *
+
+                             CARTESIAN COORDINATES
+
+   1    O        1.016477387     0.069525177    -0.052665023
+   2    C        2.225021635     0.081079186    -0.052568953
+   3    C        2.986062858     1.043033627     0.767280595
+   4    C        4.326391095     1.056773761     0.783288357
+   5    C        5.088740863     2.001532940     1.591148557
+   6    C        6.425154425     2.014947735     1.606348518
+   7    H        2.786535715    -0.633096085    -0.670125895
+   8    H        2.378772094     1.733634369     1.353347373
+   9    H        4.913291965     0.352724572     0.185564430
+  10    H        4.505907333     2.705513635     2.190275155
+  11    H        7.043295682     1.340633426     1.032432989
+  12    H        7.004213262     2.707962161     2.199579702
+
+
+           Empirical Formula: C5 H6 O  =    12 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+                  EIGENVALUES  
+ -31.00178 -29.14090 -26.79306 -22.92257 -20.20841 -19.84229 -17.03490 -16.19544
+ -14.87846 -14.36150 -14.07497 -13.55805 -12.56900 -12.46708 -10.24997 -10.07422
+  -0.92447   0.77884   1.68465   3.36015   4.22677   4.46188   4.78555   4.99977
+   5.28832   5.42745   5.49154   5.87576   5.92382   6.01005
+
+
+              NET ATOMIC CHARGES AND DIPOLE CONTRIBUTIONS
+
+  ATOM NO.   TYPE          CHARGE      No. of ELECS.   s-Pop       p-Pop       
+    1          O          -0.421884        6.4219     1.87983     4.54205
+    2          C           0.333216        3.6668     1.13373     2.53305
+    3          C          -0.299561        4.2996     1.10422     3.19534
+    4          C          -0.074294        4.0743     1.09468     2.97962
+    5          C          -0.154893        4.1549     1.08383     3.07106
+    6          C          -0.269381        4.2694     1.10210     3.16728
+    7          H           0.107706        0.8923     0.89229
+    8          H           0.179172        0.8208     0.82083
+    9          H           0.148742        0.8513     0.85126
+   10          H           0.157117        0.8429     0.84288
+   11          H           0.145946        0.8541     0.85405
+   12          H           0.148114        0.8519     0.85189
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.     3.881     0.339     0.269     3.905
+ HYBRID        -0.121     0.058     0.053     0.144
+ SUM            3.761     0.397     0.322     3.795
+
+
+          ATOMIC ORBITAL ELECTRON POPULATIONS
+
+     Atom    s        px        py        pz   
+    1  O   1.87983   1.26231   1.68313   1.59662
+    2  C   1.13373   0.86816   0.85387   0.81102
+    3  C   1.10422   1.02891   1.08716   1.07927
+    4  C   1.09468   1.00983   0.99603   0.97376
+    5  C   1.08383   1.01362   1.03241   1.02502
+    6  C   1.10210   1.03890   1.07795   1.05042
+    7  H   0.89229
+    8  H   0.82083
+    9  H   0.85126
+   10  H   0.84288
+   11  H   0.85405
+   12  H   0.85189
+
+ **********************
+ *                    *
+ * JOB ENDED NORMALLY *
+ *                    *
+ **********************
+
+
+
+ TOTAL JOB TIME:             0.18 SECONDS
+
+ == MOPAC DONE ==
