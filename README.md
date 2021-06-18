@@ -8,16 +8,15 @@ Contains a fortran code to compare an SDF file and an output file of an Orca geo
 
 # How to compile?
 
-'''
- gfortran miniConnGO.f90 -o miniConnGO.x
-'''
+> gfortran miniConnGO.f90 -o miniConnGO.x
+
 
 # How to run? 
 
-'''
- ./miniConnGO.x    mol1_obabel.sdf    mol1_orca.out    mol1_orca.sdf
-                   ( argument-1 )     ( argument-2 )   ( argument-3, optional ) 
-'''
+
+> ./miniConnGO.x    mol1_obabel.sdf    mol1_orca.out    mol1_orca.sdf
+>                   ( argument-1 )     ( argument-2 )   ( argument-3, optional ) 
+
                    
 Two input files are required and must be kept in the same location the program is executed: 
 1. mol1_obabel.sdf     <-- an SDF file (for example generated with obabel)
