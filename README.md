@@ -31,7 +31,8 @@ Argument-3 is the name of the code used for optimization. Accepted values are 'o
 Optionally, a fourth argument may be provided containing the file name to collect the geometry from the Orca output in the SDF format using connectivities
 from 'argument-1'
 
-# Sample execution - 1 (Obabel-UFF vs. Orca, see the directory example_01)
+# Sample execution - 1 
+#### Obabel-UFF vs. Orca, see the directory example_01
 
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_orca.out orca mol1_orca.sdf
 
