@@ -164,7 +164,7 @@ program conngo
   close(101)
 
   write(*,*)
-  write(*,'(a,i4)')"== bond lengths in file-1 in descending order, # = ", nlong1
+  write(*,'(a,i4)')"== bond lengths in file-1 in descending order, # ultralong bonds = ", nlong1
   do iconn = 1, Nconn
     write(*,'(f10.4)',advance='no') distsort1(iconn)
   enddo
@@ -186,7 +186,7 @@ program conngo
   enddo
   close(101)
 
-  write(*,'(a,i4)')"== bond lengths in file-2 in descending order, # = ", nlong2
+  write(*,'(a,i4)')"== bond lengths in file-2 in descending order, # ultralong bonds = ", nlong2
   do iconn = 1, Nconn
     write(*,'(f10.4)',advance='no') distsort2(iconn)
   enddo
