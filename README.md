@@ -37,7 +37,7 @@ from 'argument-1'
 #### Obabel-UFF vs. Orca, see the directory example_01
 
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_orca.out orca mol1_orca.sdf
-
+    
     == connectivities
                        File-1                  File-2                Deviation
     1  2  2  O = C     1.2201                  1.2153                  0.0048
@@ -76,7 +76,7 @@ from 'argument-1'
 #### Obabel-UFF vs. Mopac, see the directory example_02
 
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_mopac.out mopac mol1_mopac.sdf
-
+    
     == connectivities
                        File-1                  File-2                Deviation
     1  2  2  O = C     1.2201                  1.2086                  0.0115
@@ -115,7 +115,7 @@ from 'argument-1'
 #### MOPAC vs. Orca, using mol1_mopac.sdf from previous example
 
     raghurama$ ./miniConnGO.x mol1_mopac.sdf mol1_orca.out orca mol1_orca.sdf
-    
+        
     == connectivities
                        File-1                  File-2                Deviation
     1  2  2  O = C     1.2086                  1.2153                 -0.0067
