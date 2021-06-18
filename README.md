@@ -32,31 +32,36 @@ from 'argument-1'
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./conngo_test.x mol1_obabel.sdf mol1_orca.out mol1_orca.sdf
 
-    # connectivities
-    1  2  2  O =C     1.2201  l       1.2153  l       0.0048
-    2  3  1  C -C     1.4729  l       1.4656  l       0.0073
-    2  7  1  C -H     1.0858  l       1.1188  l      -0.0329
-    3  4  2  C =C     1.3396  l       1.3531  l      -0.0134
-    3  8  1  C -H     1.0872  l       1.0937  l      -0.0065
-    4  5  1  C -C     1.4776  l       1.4515  l       0.0260
-    4  9  1  C -H     1.0878  l       1.0969  l      -0.0091
-    5  6  2  C =C     1.3351  l       1.3448  l      -0.0097
-    5 10  1  C -H     1.0867  l       1.0938  l      -0.0071
-    6 11  1  C -H     1.0861  l       1.0931  l      -0.0070
-    6 12  1  C -H     1.0852  l       1.0897  l      -0.0046
+    == connectivities
+                     File-1                  File-2                Deviation
+    1  2  2  O = C     1.2201                  1.2153                  0.0048
+    2  3  1  C - C     1.4729                  1.4656                  0.0073
+    2  7  1  C - H     1.0858                  1.1188                 -0.0329
+    3  4  2  C = C     1.3396                  1.3531                 -0.0134
+    3  8  1  C - H     1.0872                  1.0937                 -0.0065
+    4  5  1  C - C     1.4776                  1.4515                  0.0260
+    4  9  1  C - H     1.0878                  1.0969                 -0.0091
+    5  6  2  C = C     1.3351                  1.3448                 -0.0097
+    5 10  1  C - H     1.0867                  1.0938                 -0.0071
+    6 11  1  C - H     1.0861                  1.0931                 -0.0070
+    6 12  1  C - H     1.0852                  1.0897                 -0.0046
 
-    # long bonds in file-1 =   11
+    == bond lengths in file-1 in descending order, # =    0
     1.4776    1.4729    1.3396    1.3351    1.2201    1.0878    1.0872    1.0867    1.0861    1.0858    1.0852
 
-    # long bonds in file-2 =   11
+    == bond lengths in file-2 in descending order, # =    0
     1.4656    1.4515    1.3531    1.3448    1.2153    1.1188    1.0969    1.0938    1.0937    1.0931    1.0897
 
-    Both files are ok
+    ** Geometries in file-1 and file-2 seem alright, no broken structures detected **
 
+    == Mean square deviation of bond lengths from file-1 and file-2
     MSD  =     0.0146 Ang
 
+    == Maximum absolute deviation in bond lengths from file-1 and file-2
     MaxAD=     0.0329 Ang
 
+    == Mean percentage absolute deviation in bond lengths from file-1 and file-2
     MPAD =     0.9606
 
-    ConnGO PASS
+    == Outcome of the Connectivity preserving Geometry Optimization
+    ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
