@@ -31,7 +31,7 @@ Argument-3 is the name of the code used for optimization. Accepted values are 'o
 Optionally, a fourth argument may be provided containing the file name to collect the geometry from the Orca output in the SDF format using connectivities
 from 'argument-1'
 
-# Sample execution - 1 (for Orca, see example_01)
+# Sample execution - 1 (Obabel-UFF vs. Orca, see example_01)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_orca.out orca mol1_orca.sdf
@@ -70,7 +70,7 @@ from 'argument-1'
     == Outcome of the Connectivity preserving Geometry Optimization
     ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
     
-# Sample execution - 2 (for Mopac, example_02)
+# Sample execution - 2 (Obabel-UFF vs. Mopac, example_02)
 
     raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
     raghurama$ ./miniConnGO.x mol1_obabel.sdf mol1_mopac.out mopac mol1_mopac.sdf
@@ -109,4 +109,41 @@ from 'argument-1'
     == Outcome of the Connectivity preserving Geometry Optimization
     ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
 
+# Sample execution - 3 (MOPAC vs. Orca using mol1_mopac.sdf from previous example)
 
+    raghurama$ gfortran miniConnGO.f90 -o miniConnGO.x
+    raghurama$ ./miniConnGO.x mol1_mopac.sdf mol1_orca.out orca mol1_orca.sdf
+    
+    == connectivities
+                       File-1                  File-2                Deviation
+    1  2  2  O = C     1.2086                  1.2153                 -0.0067
+    2  3  1  C - C     1.4754                  1.4656                  0.0098
+    2  7  1  C - H     1.0985                  1.1188                 -0.0203
+    3  4  2  C = C     1.3405                  1.3531                 -0.0126
+    3  8  1  C - H     1.0905                  1.0937                 -0.0032
+    4  5  1  C - C     1.4581                  1.4515                  0.0066
+    4  9  1  C - H     1.0943                  1.0969                 -0.0026
+    5  6  2  C = C     1.3367                  1.3448                 -0.0082
+    5 10  1  C - H     1.0928                  1.0938                 -0.0010
+    6 11  1  C - H     1.0799                  1.0931                 -0.0133
+    6 12  1  C - H     1.0806                  1.0897                 -0.0092
+
+    == bond lengths in file-1 in descending order, # ultralong bonds =    0
+      1.4754    1.4581    1.3405    1.3367    1.2086    1.0985    1.0943    1.0928    1.0905    1.0806    1.0799
+
+    == bond lengths in file-2 in descending order, # ultralong bonds =    0
+      1.4656    1.4515    1.3531    1.3448    1.2153    1.1188    1.0969    1.0938    1.0937    1.0931    1.0897
+
+    ** Geometries in file-1 and file-2 seem alright, no broken structures detected **
+
+    == Mean square deviation of bond lengths from file-1 and file-2
+    MSD  =     0.0100 Ang
+
+    == Maximum absolute deviation in bond lengths from file-1 and file-2
+    MaxAD=     0.0203 Ang
+
+    == Mean percentage absolute deviation in bond lengths from file-1 and file-2
+    MPAD =     0.7065
+
+    == Outcome of the Connectivity preserving Geometry Optimization
+    ** ConnGO PASS [MPAD < 5, MaxAD < 0.2 Angstrom] **
