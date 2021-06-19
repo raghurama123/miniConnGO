@@ -134,10 +134,10 @@ from 'argument-1'
     6 12  1  C - H     1.0806                  1.0897                 -0.0092
 
     == bond lengths in file-1 in descending order, # ultralong bonds =    0
-      1.4754    1.4581    1.3405    1.3367    1.2086    1.0985    1.0943    1.0928    1.0905    1.0806    1.0799
+    1.4754    1.4581    1.3405    1.3367    1.2086    1.0985    1.0943    1.0928    1.0905    1.0806    1.0799
 
     == bond lengths in file-2 in descending order, # ultralong bonds =    0
-      1.4656    1.4515    1.3531    1.3448    1.2153    1.1188    1.0969    1.0938    1.0937    1.0931    1.0897
+    1.4656    1.4515    1.3531    1.3448    1.2153    1.1188    1.0969    1.0938    1.0937    1.0931    1.0897
 
     ** Geometries in file-1 and file-2 seem alright, no broken structures detected **
 
